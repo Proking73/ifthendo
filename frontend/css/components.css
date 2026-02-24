@@ -1,0 +1,78 @@
+/* nav logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.nav-logo span:last-of-type {
+  display: inline-block;
+  transition: transform .25s ease;
+}
+
+.nav-logo:hover span:last-of-type {
+  transform: translateX(.15rem);
+}
+
+/* nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav-link a {
+  display: block;
+  padding: .6rem 1rem;
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: transform .25s ease;
+}
+
+.nav-link:not(.log-in) a:hover {
+  transform: translateY(-2px);
+}
+
+.nav-links:last-child {
+  margin-right: .25rem;
+}
+
+/* buttons */
+button {
+  background: hsl(0 0 5);
+  transition: background .15s ease;
+  padding: .7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Lato, arial;
+  border-radius: 8px;
+  border: none;
+  color: #f5f5f5;
+  cursor: pointer;
+  box-shadow: .2rem .2rem 1rem hsla(0, 0%, 0%, .15);
+}
+
+button:hover {
+  background: hsl(351 65% 20%);
+}
+
+/* login button */
+.log-in a {
+  padding: 0;
+}
+
+.log-in a button {
+  padding: .4rem 1rem;
+  background: hsl(351 50 30);
+  color: hsl(351 80 80);
+  box-shadow: none;
+}
+
+.log-in a button:hover {
+  background: hsl(351 50 20);
+}

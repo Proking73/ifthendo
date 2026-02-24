@@ -1,0 +1,67 @@
+.nav-blur {
+  width: 100%;
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, .2), transparent);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  width: 97%;
+  margin: .75rem;
+  padding: .3rem;
+  background: #4a4a4a;
+  box-shadow: 0 .4rem 1rem hsla(0, 0%, 0%, .2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* hero layout */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-headlines {
+  color: hsl(351 80% 90%);
+}
+
+.headline {
+  font-family: "Playfair";
+  font-size: clamp(5rem, 11vw, 12rem);
+  line-height: 110%;
+}
+
+.headline i {
+  font-weight: 100;
+}
+
+.supporting-headline {
+  color: #8f8f8f;
+  font-size: clamp(1rem, 2vw, 2.25rem);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+/* demo section */
+.demo {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-img {
+  height: 35vw;
+  border-radius: 30px;
+  box-shadow: .4rem .4rem .75rem hsla(0, 0%, 0%, .5);
+}

@@ -1,0 +1,14 @@
+/* demo text slide animation */
+.to-demo {
+  font-size: 1.15rem;
+  animation: toDemoSlide 5.5s 2s infinite;
+}
+
+@keyframes toDemoSlide {
+  0%, 60% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-20%);
+  }
+}
